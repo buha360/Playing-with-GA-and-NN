@@ -1,8 +1,6 @@
-[**A feladat leírása**](feladat.pdf).
+# Feladatok és Algoritmus(ok) ismertetése
 
-# Algoritmus(ok) ismertetése
-
-# Feladat első része:
+# Első feladat: Genetikus algoritmus segítségével függvény közelítés
 ### 1. Célfüggvények (Fitness Functions)
 Rastrigin Function: Egy nem-konvex függvény, amelyet gyakran használnak globális optimalizációs problémák vizsgálatára. A Rastrigin-függvény sok lokális minimummal rendelkezik, ami megnehezíti az algoritmus számára a globális minimum megtalálását.
 Modified Rastrigin Function for Two Variables: A Rastrigin-függvény módosított változata két változóra.
@@ -38,7 +36,7 @@ A fitness érték az egyedek "alkalmasságát" méri, vagyis hogy mennyire jók 
 ### 9. CSV Fájlba Írás
 Az algoritmus eredményeit CSV fájlba menti, amely lehetővé teszi az eredmények későbbi elemzését és összehasonlítását.
 
-# TSP:
+# Második feladat: TSP (Traveling Salesman Problem)
 Ez az algoritmus a genetikus algoritmus alkalmazása az Utazó Ügynök Problémára (TSP - Traveling Salesman Problem). A TSP célja, hogy megtalálja a legrövidebb lehetséges útvonalat, amelyen keresztül egy ügynök ellátogat minden városba pontosan egyszer, majd visszatér az eredeti városhoz.
 
 ### Fitness függvény (fitness_tsp):
@@ -64,7 +62,7 @@ Az algoritmus több generáción keresztül fut, ahol minden generációban a k�
 - Útvonal kirajzolása (plot_route): A legjobb útvonal vizualizálása egy grafikonon, amely megmutatja az egyes városok közötti utat.
 
 # Futási eredmények
-Jelenlegi beállításokkal az feladat első része: "Az algoritmus teljes futási ideje: 348.4622766971588 másodperc"
+Jelenlegi beállításokkal az feladat futási ideje: 348.46227 sec
 
 # Néhány TSP megoldás:
 ### 1000 város, 1000 generáció, 200 populáció és 0.01 lépésköz
@@ -83,8 +81,8 @@ Jelenlegi beállításokkal az feladat első része: "Az algoritmus teljes futá
 - 20k távolságról -> 4.3k-ra redukálás
 ![Kép](src/images/MesInt2_4.png)
 
-# Neurális Hálózat - CarGame
-Ez a program egy egyszerű autós játékot valósít meg, ahol az egyedek neurális hálózat irányítja. A cél az, hogy az autók megtanuljanak navigálni a pályán különböző checkpointok elérésével.
+# Harmadik feladat: Neurális Hálózat - Game
+Ez a program egy egyszerű játékot valósít meg, ahol az egyedek neurális hálózat irányítja. A cél az, hogy az egyedek megtanuljanak navigálni a pályán különböző checkpointok elérésével.
 
 ## Neurális Réteg és Hálózat:
 
@@ -105,9 +103,9 @@ Ez a program egy egyszerű autós játékot valósít meg, ahol az egyedek neur�
 ### Játékciklus:
     - Kezeli a felhasználói interakciókat és frissíti a játék állapotát.
     - Automatikusan vált generációt, ha az összes autó meghal...
-    - Egyébként manuálisan a Space segítségével is lehet generációt váltani
+    - Egyébként manuálisan a Space segítségével lehet generációt váltani
 
-# Tik Tak Toe - Minimax game
+# Negyedik feladat: TikTakToe - Minimax game
 Ez a program TikTakToe játékot valósít meg, ahol a felhasználó egy "AI" ellen játszhat. Az AI a minimax algoritmust használja a döntéshozatalhoz, optimalizálva az esélyét a nyerésre.
 
 ## Leírás:
